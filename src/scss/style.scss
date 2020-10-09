@@ -16,7 +16,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-	color: red;
+	background-color: #fff;
+	color: #616161;
 	margin: 0;
 	padding: 0;
 }
@@ -36,6 +37,7 @@ h1, h2, h3, h4, h5, h6, p {
 a {
 	display: inline-block;
 	text-decoration: none;
+	color: #616161;
 }
 
 ul, li {
@@ -47,5 +49,107 @@ ul, li {
 /*Header*/
 
 .header {
-  display: flex;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+
+  &__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 70%;
+	}
+
+	&__link {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #616161;
+	}
+
+	&__link:first-child {
+		margin-right: 48px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__search {
+		display: flex;
+		align-items: center;
+		margin-right: 66px;
+	}
+
+	&__search-btn {
+		border: none;
+		background: inherit;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #616161;
+		padding: 0;
+		margin-left: 8px;
+	}
+
+	&__personal-area {
+		display: flex;
+		align-items: center;
+	}
+
+	&__user {
+		margin-right: 16px;
+	}
+}
+
+/*Menu*/
+
+.menu {
+	width: 407px;
+	margin-left: 125px;
+
+	&__item {
+		border-radius: 16px;
+		padding: 24px 0 24px 25px;
+		cursor: pointer;
+		transition: box-shadow 0.2s ease-in, transform 0.2s ease-in;
+	}
+
+	&__item:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+	}
+
+	&__link-icon {
+		display: flex;
+		align-items: center;
+	}
+
+	&__link-text {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 24px;
+		margin-left: 16px;
+	}
+
+	
 }
