@@ -2,27 +2,14 @@ html {
 	box-sizing: border-box;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	background-color: #fff;
-	color: #616161;
-	margin: 0;
-	padding: 0;
+*,*::before, *::after {
+	box-sizing: inherit;
 }
 
 // .container {
 // 	max-width: 1820px;
 // 	margin: 0 auto;
 // }
-
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: inherit;
-	line-height: 1;
-}
 
 a {
 	display: inline-block;
@@ -34,6 +21,40 @@ ul, li {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	font-size: inherit;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	background-color: #fff;
+	color: #616161;
+	margin: 0;
+	padding: 0;
+}
+
+.general__title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 24px;
+	margin-bottom: 18px;
+	color: #474747;
+}
+
+.general__preview {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 33px;
 }
 
 /*Header*/
@@ -116,7 +137,6 @@ ul, li {
 
 .menu {
 	width: 407px;
-	flex-shrink: 0;
 
 	&__item {
 		border-radius: 16px;
@@ -223,6 +243,140 @@ ul, li {
 	&__btn-icon {
 		margin-left: 40px;
 	}
-
 }
 
+/*Services*/
+
+.services {
+	margin-top: 61px;
+
+	&__list {
+		display: flex;
+		margin-bottom: 62px;
+	}
+
+	&__list-item {
+		position: relative;
+		margin-right: 25px;
+	}
+
+	&__list-picture {
+		border-radius: 15px;
+	}
+
+	&__list-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 15px 0 0 23px;
+	}
+
+	&__list-description {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
+		color: #fff;
+		margin-bottom: 65px;
+	}
+
+	&__list-offers {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		line-height: 12px;
+		color: #fff;
+	}
+
+	&__buttons {
+		position: absolute;
+		top: 49%;
+    right: 100px;
+	}
+
+	&__btn {
+		background: #EAEEF4;;
+		border: none;
+		border-radius: 15px;
+		width: 56px;
+		height: 56px;
+		padding: 0;
+	}
+}
+
+/*Balloons*/
+
+.balloons {
+	position: relative;
+	margin-bottom: 60px;
+
+	&__wrapper {
+		position: absolute;
+		margin: 32px 0 0 32px;
+	}
+
+	&__title {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 40px;
+		color: #fff;
+		margin-bottom: 24px;
+	}
+
+	&__preview {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 24px;
+		color: #fff;
+		margin-bottom: 24px;
+	}
+
+	&__background {
+		width: 100%;
+		border-radius: 15px;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		background: #fff;
+		color: #31989F;
+		padding: 16px 24px;
+		border: none;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		border-radius: 8px;
+		width: 208px;
+	}
+
+	&__link-icon {
+		display: flex;
+		margin-left: 40px;
+
+	}
+
+	&__buttons {
+		position: absolute;
+		top: 71%;
+    right: 70px;
+	}
+
+	&__btn {
+		background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 15px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+	}
+}
