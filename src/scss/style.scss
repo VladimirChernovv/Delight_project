@@ -137,6 +137,7 @@ body {
 
 .menu {
 	width: 407px;
+	flex-shrink: 0;
 
 	&__item {
 		border-radius: 16px;
@@ -362,7 +363,6 @@ body {
 	&__link-icon {
 		display: flex;
 		margin-left: 40px;
-
 	}
 
 	&__buttons {
@@ -378,5 +378,101 @@ body {
     width: 56px;
     height: 56px;
     padding: 0;
+	}
+}
+
+/*Developments*/
+
+.developments {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__envelope {
+		display: flex;
+
+	}
+
+	&__left-column {
+		width: 846px;
+		margin-right: 33px;
+	}
+
+	&__btn {
+		background: #EAEEF4;
+    border: none;
+    border-radius: 15px;
+    width: 56px;
+    height: 56px;
+		padding: 0;
+		cursor: pointer;
+	}
+
+	&__left-photo {
+		background: #C4C4C4;
+		border-radius: 15px;
+	}
+
+	&__general-title {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 32px;
+		color: #354052;
+		margin-bottom: 16px;
+		margin-top: 26px;
+	}
+
+	&__general-text {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 32px;
+		color: #354052;
+		margin-bottom: 30px;
+	}
+
+	&__left-footer {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__calendar {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__calendar-icon {
+		margin-right: 8px;
+	}
+
+	&__link {
+		display: flex;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 24px;
+		display: flex;
+		align-items: center;
+		color: #665FFD;
+		cursor: pointer;
+	}
+
+	&__left-icon {
+		display: flex;
+		align-items: center;
+		margin-left: 40px;
+	}
+
+	&__right-column {
+		width: 404px;
+	}
+
+	&__right-photo {
+		border-radius: 15px;
 	}
 }
