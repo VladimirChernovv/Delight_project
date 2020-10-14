@@ -603,6 +603,7 @@ body {
 	background: #665FFD;
 	border-radius: 15px;
 	padding: 56px 57px 56px 48px;
+	margin-bottom: 104px;
 
 	&__text {
 		font-family: Roboto;
@@ -650,5 +651,17 @@ body {
 
 	&__icon {
 		margin-left: 40px;
+	}
+}
+
+/*Footer*/
+
+.footer {
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		
 	}
 }
