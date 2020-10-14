@@ -527,3 +527,69 @@ body {
 		cursor: pointer;
 	}
 }
+
+/*Questions*/
+
+.questions {
+	margin-bottom: 105px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__btn {
+		background: #EAEEF4;
+    border: none;
+    border-radius: 15px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    cursor: pointer;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		padding: 21px 29px 21px 23px;
+		width: 407px;
+		margin-right: 30px;
+		border-radius: 15px;
+		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	&__item:nth-last-child() {
+		margin-right: 0;
+	}
+
+	&__title {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #474747;
+		margin-bottom: 14px;
+	}
+
+	&__description {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 18px;
+		color: #474747;
+		margin-bottom: 18px;
+	}
+
+	&__calendar {
+		display: flex;
+	}
+
+	&__calendar-icon {
+		margin-right: 8px;
+	}
+}
