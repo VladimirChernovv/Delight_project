@@ -593,3 +593,62 @@ body {
 		margin-right: 8px;
 	}
 }
+
+/*Notification*/
+
+.notification {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+	background: #665FFD;
+	border-radius: 15px;
+	padding: 56px 57px 56px 48px;
+
+	&__text {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 32px;
+		color: #FFFFFF;
+	}
+
+	&__form {
+		position: relative;
+	}
+
+	&__email {
+		width: 786px;
+    border: none;
+    border-radius: 8px;
+		height: 88px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #616161;
+		padding-left: 42px;
+	}
+
+	&__btn {
+		display: flex;
+		position: absolute;
+		top: 16px;
+    right: 15px;
+		border: none;
+		border-radius: 8px;
+		background: #665FFD;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #fff;
+		padding: 16px 24px;
+	}
+
+	&__icon {
+		margin-left: 40px;
+	}
+}
