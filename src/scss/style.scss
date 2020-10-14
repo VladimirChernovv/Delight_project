@@ -136,8 +136,10 @@ body {
 /*Menu*/
 
 .menu {
-	width: 407px;
-	flex-shrink: 0;
+	// width: 407px;
+	// flex-shrink: 0;
+	width: 24%;
+	margin-right: 30px;
 
 	&__item {
 		border-radius: 16px;
@@ -174,7 +176,8 @@ body {
 /*Content*/
 
 .content {
-	flex-grow: 1;
+	// flex-grow: 1;
+	width: 74%;
 }
 
 /*Trip*/
@@ -384,6 +387,8 @@ body {
 /*Developments*/
 
 .developments {
+	margin-bottom: 57px;
+
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -412,6 +417,7 @@ body {
 	&__left-photo {
 		background: #C4C4C4;
 		border-radius: 15px;
+		width: 100%;
 	}
 
 	&__general-title {
@@ -474,5 +480,50 @@ body {
 
 	&__right-photo {
 		border-radius: 15px;
+		width: 100%;
+	}
+}
+
+/*Articles*/
+
+.articles {
+	margin-bottom: 64px;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: 408px;
+	}
+
+	&__photo {
+		border-radius: 15px;
+		width: 100%;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__calendar {
+		display: flex;
+    align-items: center
+	}
+
+	&__calendar-icon {
+		margin-right: 8px;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+	}
+
+	&__left-icon {
+		margin-left: 40px;
+		cursor: pointer;
 	}
 }
