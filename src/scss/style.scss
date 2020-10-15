@@ -335,6 +335,8 @@ body {
 /*Card*/
 
 .card {
+	display: flex;
+	justify-content: space-between;
 
 	&__item {
 		width: 407px;
@@ -343,11 +345,30 @@ body {
 	}
 	
 	&__upper-item {
-		
 		background: url('../img/offers/yachts.png') no-repeat center;
 		height: 200px;
 		padding: 24px 21px 23px 24px;
 		border-radius: 15px 15px 0 0;
+	}
+
+	.second {
+		background: url('../img/offers/hotel-1.png') no-repeat center;
+	}
+
+	.third {
+		background: url('../img/offers/hotel-2.png') no-repeat center;
+	}
+
+	.fourth {
+		background: url('../img/suppliers/Remezova.png') no-repeat center;
+	}
+
+	.fifth {
+		background: url('../img/suppliers/hotel.png') no-repeat center;
+	}
+
+	.sixth {
+		background: url('../img/suppliers/Volkov-Ilya.png') no-repeat center;
 	}
 
 	&__upper-wraper {
@@ -470,6 +491,28 @@ body {
 		border-radius: 15px;
 		cursor: pointer;
 	}
+}
+
+/*Suppliers*/
+
+.suppliers {
+	margin-bottom: 60px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	&__btn {
+		background: #EAEEF4;
+    border: none;
+    border-radius: 15px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    cursor: pointer;
+	}	
 }
 
 /*Balloons*/
@@ -820,14 +863,11 @@ body {
 
 .footer {
 	margin: 0 100px 0 537px;
+	padding-bottom: 128px;
 
 	&__list {
 		display: flex;
 		justify-content: space-between;
-	}
-
-	&__item {
-		
 	}
 
 	&__title {
