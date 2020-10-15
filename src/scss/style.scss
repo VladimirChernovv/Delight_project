@@ -310,6 +310,168 @@ body {
 	}
 }
 
+/*Offers*/
+
+.offers {
+	margin-bottom: 60px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	&__btn {
+		background: #EAEEF4;
+    border: none;
+    border-radius: 15px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    cursor: pointer;
+	}	
+}
+
+/*Card*/
+
+.card {
+
+	&__item {
+		width: 407px;
+		box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+		border-radius: 0 0 15px 15px;
+	}
+	
+	&__upper-item {
+		
+		background: url('../img/offers/yachts.png') no-repeat center;
+		height: 200px;
+		padding: 24px 21px 23px 24px;
+		border-radius: 15px 15px 0 0;
+	}
+
+	&__upper-wraper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__right-icons {
+		display: flex;
+	}
+
+	&__message-icon {
+		margin-right: 14px;	
+	}
+
+	&__lower-item {
+		padding: 15px 24px 24px 22px;
+		border-radius: 0 0 15px 15px;
+	}
+
+	&__title {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
+		color: #354052;
+		margin-bottom: 9px;
+	}
+
+	&__options {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__option {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 21px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #6D7787;
+		height: 23px;
+		padding: 0 12px;
+		background: #EAEEF4;
+		border-radius: 16px;
+		margin-bottom: 8px;
+	}
+
+	&__rent {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 11px;
+	}
+
+	&__average-price {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #665FFD;
+	}
+
+	&__text {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 21px;
+		color: #6D7787;
+	}
+
+	&__day-price {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 24px;
+		color: #6D7787;
+	}
+
+	&__contacts {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+	}
+
+	&__user-photo {
+		border-radius: 8px;
+		margin-right: 10px;
+	}
+
+	&__user-name {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		display: flex;
+		align-items: center;
+		color: #354052;
+	}
+
+	&__phone-number {
+		display: flex;
+    align-items: center;
+    justify-content: center;
+		background: #EAEEF4;
+		height: 32px;
+		width: 32px;
+		border-radius: 15px;
+		cursor: pointer;
+	}
+}
+
 /*Balloons*/
 
 .balloons {
@@ -657,11 +819,54 @@ body {
 /*Footer*/
 
 .footer {
+	margin: 0 100px 0 537px;
+
 	&__list {
 		display: flex;
+		justify-content: space-between;
 	}
 
 	&__item {
 		
+	}
+
+	&__title {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 32px;
+		color: #354052;
+		margin-bottom: 30px;
+	}
+
+	&__link {
+		display: block;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 32px;
+		color: #354052;
+		margin-bottom: 7px;
+		cursor: pointer;
+	}
+
+	&__link:last-child {
+		margin-bottom: 0;
+	}
+
+	&__app-link {
+		display: block;
+	}
+
+	&__copyright {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: #B0B0B0;
+		margin-top: 8px;
 	}
 }
