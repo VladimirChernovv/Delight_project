@@ -7,7 +7,7 @@ module.exports = {
   // Входной файл
   entry: {
     'main': './src/js/index.js',
-    'search': './src/js/search.js',
+    'popup': './src/js/popup.js',
   },
 
   // Выходной файл
@@ -68,20 +68,20 @@ module.exports = {
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
-      title: 'Webpack 4 Starter',
       template: './src/index.html',
       inject: true,
       minify: {
         removeComments: true,
         collapseWhitespace: false,
-      }
+      },
+      chunks: ['main'],
     }),
 
-    // Подключаем файл Slider
-    new MiniCssExtractPlugin({
-      filename: 'search.html',
-      template: './src/search.html',
-      chunks: ['search'],
+    // Подключаем файл с меню
+    new HtmlWebpackPlugin({
+      filename: 'popup.html',
+      template: './src/popup.html',
+      chunks: ['popup'],
     }),
 
 
