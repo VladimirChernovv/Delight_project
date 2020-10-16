@@ -5,13 +5,14 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   // Входной файл
-  entry: [
-    './src/js/index.js'
-  ],
+  entry: {
+    'main': './src/js/index.js',
+    'search': './src/js/search.js',
+  },
 
   // Выходной файл
   output: {
-    filename: './js/bundle.js'
+    filename: './js/[name].js'
   },
 
   // Source maps для удобства отладки
@@ -75,6 +76,14 @@ module.exports = {
         collapseWhitespace: false,
       }
     }),
+
+    // Подключаем файл Slider
+    new MiniCssExtractPlugin({
+      filename: 'search.html',
+      template: './src/search.html',
+      chunks: ['search'],
+    }),
+
 
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({

@@ -60,10 +60,7 @@ body {
 /*Header*/
 
 .header {
-	margin-left: 100px;
-	margin-right: 100px;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding: 24px 100px;
 
   &__container {
 		display: flex;
@@ -129,15 +126,14 @@ body {
 
 .main {
 	display: flex;
-	margin-left: 100px;
-	margin-right: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 /*Menu*/
 
 .menu {
-	// width: 407px;
-	// flex-shrink: 0;
+	min-width: 407px;
 	width: 24%;
 	margin-right: 30px;
 
@@ -862,7 +858,7 @@ body {
 /*Footer*/
 
 .footer {
-	margin: 0 100px 0 537px;
+	padding: 0 100px 0 537px;
 	padding-bottom: 128px;
 
 	&__list {
