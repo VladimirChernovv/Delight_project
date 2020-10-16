@@ -248,11 +248,11 @@ body {
 /*Services*/
 
 .services {
-	margin-top: 61px;
+	padding-top: 61px;
+	padding-bottom: 62px;
 
 	&__list {
 		display: flex;
-		margin-bottom: 62px;
 	}
 
 	&__list-item {
@@ -309,7 +309,7 @@ body {
 /*Offers*/
 
 .offers {
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 
 	&__wrapper {
 		display: flex;
@@ -492,7 +492,7 @@ body {
 /*Suppliers*/
 
 .suppliers {
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 
 	&__wrapper {
 		display: flex;
@@ -515,7 +515,7 @@ body {
 
 .balloons {
 	position: relative;
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 
 	&__wrapper {
 		position: absolute;
@@ -588,7 +588,7 @@ body {
 /*Developments*/
 
 .developments {
-	margin-bottom: 57px;
+	padding-bottom: 57px;
 
 	&__wrapper {
 		display: flex;
@@ -688,7 +688,7 @@ body {
 /*Articles*/
 
 .articles {
-	margin-bottom: 64px;
+	padding-bottom: 64px;
 
 	&__list {
 		display: flex;
@@ -732,7 +732,7 @@ body {
 /*Questions*/
 
 .questions {
-	margin-bottom: 105px;
+	padding-bottom: 105px;
 
 	&__wrapper {
 		display: flex;
@@ -804,7 +804,7 @@ body {
 	background: #665FFD;
 	border-radius: 15px;
 	padding: 56px 57px 56px 48px;
-	margin-bottom: 104px;
+	
 
 	&__text {
 		font-family: Roboto;
@@ -858,8 +858,7 @@ body {
 /*Footer*/
 
 .footer {
-	padding: 0 100px 0 537px;
-	padding-bottom: 128px;
+	padding: 104px 100px 128px 537px;
 
 	&__list {
 		display: flex;
