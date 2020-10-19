@@ -68,6 +68,11 @@ body {
 		align-items: center;
 	}
 
+	&__logo-link {
+		min-width: 407px;
+		margin-right: 30px;
+	}
+
 	&__nav {
 		display: flex;
 		align-items: center;
@@ -194,22 +199,17 @@ body {
 		background-color: #fff;
 		padding: 16px 16px 16px 42px;
 		border-radius: 8px;
+		width: 882px;
 	}
 
 	&__select-item {
 		position: relative;
-		margin-right: 35px;
+		margin-right: 68px;
 	}
 
-	// &__select-item::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	width: 1px;
-	// 	height: 56px;
-	// 	top: 0;
-	// 	left: 0;
-	// 	background-color: #ECECEC;
-	// }
+	&__select-item:nth-child(3) {
+		margin-right: 35px;
+	}
 
 	&__dropdown-title {
 		display: flex;
@@ -250,6 +250,15 @@ body {
 .services {
 	padding-top: 61px;
 	padding-bottom: 62px;
+	position: relative;
+
+	
+
+	&__buttons {
+		position: absolute;
+		top: 65px;
+		right: 0;
+	}
 
 	&__list {
 		display: flex;
@@ -290,12 +299,6 @@ body {
 		color: #fff;
 	}
 
-	&__buttons {
-		position: absolute;
-		top: 49%;
-    right: 100px;
-	}
-
 	&__btn {
 		background: #EAEEF4;;
 		border: none;
@@ -310,11 +313,16 @@ body {
 
 .offers {
 	padding-bottom: 60px;
+	position: relative;
 
-	&__wrapper {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	&__views {
+		color: #665FFD;
+	}
+
+	&__buttons {
+		position: absolute;
+		top: 10px;
+		right: 0;
 	}
 	
 	&__btn {
@@ -332,48 +340,39 @@ body {
 
 .card {
 	display: flex;
-	justify-content: space-between;
 
 	&__item {
 		width: 407px;
 		box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-		border-radius: 0 0 15px 15px;
+		border-radius: 15px 15px 15px 15px;
+		margin-right: 30px;
 	}
 	
 	&__upper-item {
-		background: url('../img/offers/yachts.png') no-repeat center;
-		height: 200px;
-		padding: 24px 21px 23px 24px;
-		border-radius: 15px 15px 0 0;
-	}
-
-	.second {
-		background: url('../img/offers/hotel-1.png') no-repeat center;
-	}
-
-	.third {
-		background: url('../img/offers/hotel-2.png') no-repeat center;
-	}
-
-	.fourth {
-		background: url('../img/suppliers/Remezova.png') no-repeat center;
-	}
-
-	.fifth {
-		background: url('../img/suppliers/hotel.png') no-repeat center;
-	}
-
-	.sixth {
-		background: url('../img/suppliers/Volkov-Ilya.png') no-repeat center;
+		
 	}
 
 	&__upper-wraper {
 		display: flex;
-		justify-content: space-between;
+		position: relative;
 	}
+
+	&__picture {
+		width: 100%;
+		border-radius: 15px 15px 0 0;
+	}
+
+	&__upper-location {
+		position: absolute;
+		top: 24px;
+		left: 24px;
+	} 
 
 	&__right-icons {
 		display: flex;
+		position: absolute;
+		top: 24px;
+		right: 21px;
 	}
 
 	&__message-icon {
@@ -493,11 +492,16 @@ body {
 
 .suppliers {
 	padding-bottom: 60px;
+	position: relative;
 
-	&__wrapper {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	&__views {
+		color: #665FFD;
+	}
+
+	&__buttons {
+		position: absolute;
+		top: 10px;
+		right: 0;
 	}
 	
 	&__btn {
@@ -517,8 +521,15 @@ body {
 	position: relative;
 	padding-bottom: 60px;
 
+	&__background {
+		width: 100%;
+		border-radius: 15px;
+	}
+
 	&__wrapper {
 		position: absolute;
+		top: 0;
+    left: 0;
 		margin: 32px 0 0 32px;
 	}
 
@@ -541,11 +552,6 @@ body {
 		margin-bottom: 24px;
 		color: #fff;
 		margin-bottom: 24px;
-	}
-
-	&__background {
-		width: 100%;
-		border-radius: 15px;
 	}
 
 	&__link {
@@ -571,7 +577,7 @@ body {
 
 	&__buttons {
 		position: absolute;
-		top: 71%;
+		bottom: 110px;
     right: 70px;
 	}
 
@@ -589,20 +595,21 @@ body {
 
 .developments {
 	padding-bottom: 57px;
-
-	&__wrapper {
-		display: flex;
-		justify-content: space-between;
-	}
+	position: relative;
 
 	&__envelope {
 		display: flex;
-
 	}
 
 	&__left-column {
 		width: 846px;
 		margin-right: 33px;
+	}
+
+	&__buttons {
+		position: absolute;
+		top: 10px;
+		right: 0;
 	}
 
 	&__btn {
@@ -692,11 +699,15 @@ body {
 
 	&__list {
 		display: flex;
-		justify-content: space-between;
 	}
 
 	&__item {
 		width: 408px;
+		margin-right: 30px;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
 	}
 
 	&__photo {
@@ -733,11 +744,12 @@ body {
 
 .questions {
 	padding-bottom: 105px;
+	position: relative;
 
-	&__wrapper {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	&__buttons {
+		position: absolute;
+		top: 10px;
+		right: 0;
 	}
 
 	&__btn {
