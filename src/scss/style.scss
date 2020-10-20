@@ -549,7 +549,6 @@ body {
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 24px;
-		margin-bottom: 24px;
 		color: #fff;
 		margin-bottom: 24px;
 	}
@@ -588,6 +587,40 @@ body {
     width: 56px;
     height: 56px;
     padding: 0;
+	}
+}
+
+@media (max-width: 1680px) {
+	.balloons__wrapper {
+    margin: 10px 0 0 20px;
+	}
+
+	.balloons__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+	}
+
+	.balloons__preview {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.balloons__wrapper {
+		margin: 10px 0 0 20px;
+	}
+
+	.balloons__title {
+		font-size: 28px;
+    line-height: 23px;
+    margin-bottom: 5px;
+	}
+
+	.balloons__preview {
+		font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 9px;
 	}
 }
 
@@ -864,6 +897,26 @@ body {
 
 	&__icon {
 		margin-left: 40px;
+	}
+}
+
+@media (max-width: 1840px) {
+	.notification {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 20px 57px 20px 48px;
+	}
+
+	.notification__text {
+		line-height: 25px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.notification__email {
+		width: 600px;
 	}
 }
 
