@@ -77,7 +77,7 @@ module.exports = {
       chunks: ['main'],
     }),
 
-    // Подключаем файл с меню
+    // Подключаем всплывающее окно
     new HtmlWebpackPlugin({
       filename: 'popup.html',
       template: './src/popup.html',
