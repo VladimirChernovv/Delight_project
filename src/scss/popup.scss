@@ -11,15 +11,10 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	background-color: #fff;
-	color: red;
+	color: #616161;
 	margin: 0;
 	padding: 0;
 }
-
-// .container {
-// 	max-width: 1820px;
-// 	margin: 0 auto;
-// }
 
 a {
 	display: inline-block;
@@ -36,4 +31,174 @@ ul, li {
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	font-size: inherit;
+}
+
+/*Entrance*/
+
+.entrance {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	
+	&__logo {
+		margin-bottom: 90px;
+	}
+
+	&__services {
+		width: 50%;
+		padding: 24px 0 0 100px;
+	}
+
+	&__heading {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 64px;
+		line-height: 24px;
+		color: #474747;
+	}
+
+	&__slogan {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
+		color: #616161;
+		margin-top: 25px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 76px 0 144px 0;
+	}
+
+	&__item {
+		width: 251px;
+		height: 320px;
+		border-radius: 16px;
+		padding:  35px 29px 24px 23px;
+		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+		margin-right: 24px;
+		margin-bottom: 24px;
+		position: relative;
+	}
+
+	&__item:nth-child(3) {
+		margin-right: 0;
+	}
+
+	&__item:nth-child(6) {
+		margin-right: 0;
+	}
+
+	&__item-title {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+		color: #474747;
+		margin-bottom: 9px;
+	}
+
+	&__item-text {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		color: #474747;
+		margin-bottom: 44px;
+	}
+
+	&__item-icon {
+		position: absolute;
+		bottom: 24px;
+		left: 24px;
+	}
+
+	&__cover {
+		background: url('../img/popup/popup-bg.png') center/cover;
+		width: 50%;
+		position: relative;
+	}
+
+	&__title {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 200px;
+		line-height: 200px;
+		color: #FFFFFF;
+		margin: 120px 0 0 100px;
+	}
+
+	&__text {
+		position: absolute;
+		top: 140px;
+		right: 100px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		color: #FFFFFF;
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+		width: 71%;
+		padding: 25px 17px 26px 42px;
+		background: #fff;
+		border-radius: 8px;
+		position: absolute;
+		bottom: 144px;
+		left: 105px;
+	}
+
+	&__log {
+		border: none;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #616161;
+	}
+
+	&__password {
+		border: none;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #616161;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		background: #665FFD;
+		width: 161px;
+		border-radius: 8px;
+		border: none;
+		padding: 16px 24px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #FFFFFF;
+		position: absolute;
+    bottom: 10px;
+    right: 17px;
+	}
+
+	&__icon {
+		margin-left: 40px;
+	}
 }
