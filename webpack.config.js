@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     'main': './src/js/index.js',
     'popup': './src/js/popup.js',
+    'index_2': './src/js/index.js',
   },
 
   // Выходной файл
@@ -82,6 +83,13 @@ module.exports = {
       filename: 'popup.html',
       template: './src/popup.html',
       chunks: ['popup'],
+    }),
+
+    // Подключаем страницу index_2.html
+    new HtmlWebpackPlugin({
+      filename: 'index_2.html',
+      template: './src/index_2.html',
+      chunks: ['index_2'],
     }),
 
 
