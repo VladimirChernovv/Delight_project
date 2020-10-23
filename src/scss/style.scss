@@ -255,6 +255,22 @@ body {
 	.general__title {
 		font-size: 36px;
 	}
+
+	.trip__select-item {
+		margin-right: 5px;
+	}
+
+	.trip__select-item:nth-child(3) {
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.trip__select {
+		justify-content: space-between;
+	}
+
+
 }
 
 @media (max-width: 1200px) {
@@ -958,8 +974,6 @@ body {
 @media (max-width: 1840px) {
 	.notification {
 		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
 		padding: 20px 57px 20px 48px;
 	}
 
@@ -967,13 +981,21 @@ body {
 		line-height: 25px;
 		margin-bottom: 10px;
 	}
-}
 
-@media (max-width: 1300px) {
+	.notification__text br {
+		display: none;
+	}
+
+	.notification__form {
+		width: 100%;
+	}
+
 	.notification__email {
-		width: 600px;
+		width: 100%;
 	}
 }
+
+
 
 /*Footer*/
 
@@ -1046,6 +1068,8 @@ body {
 	display: flex;
 	padding-bottom: 40px;
 
+	
+
 	&__left-column {
 		width: 55%;
 		margin-right: 51px;
@@ -1084,7 +1108,15 @@ body {
 
 	&__specifications-item {
 		position: relative;
-		margin: 0 16px 16px 0;
+		margin: 0 15px 16px 0;
+	}
+
+	&__specifications-item:nth-child(3) {
+		margin-right: 0;
+	}
+
+	&__specifications-item:nth-child(6) {
+		margin-right: 0;
 	}
 
 	&__specifications-picture {
@@ -1142,11 +1174,7 @@ body {
 		margin: 83px 0 90px 0;
 	}
 
-	@media (max-width: 1800px) {
-		.service__description {
-			display: block;
-		}
-	}
+	
 
 	&__description-title {
 		font-family: Roboto;
@@ -1211,6 +1239,53 @@ body {
 		font-weight: 300;
 		font-size: 56px;
 		line-height: 24px;
+	}
+}
+
+@media (max-width: 1920px) {
+	.service {
+		display: block;
+	}
+
+	.service__left-column {
+		display: block;
+		width: 100%;
+	}
+
+	.service__specifications-item {
+		margin-right: 16px;
+	}
+
+	.service__specifications-item:nth-child(3) {
+		margin-right: 16px;
+	}
+
+	.service__specifications-item:nth-child(6) {
+		margin-right: 16px;
+	}
+
+	.service__right-column {
+		width: 100%;
+	}
+
+	.service__right-buttons {
+		top: -85px;
+    left: 0;
+	}
+
+	.service__links {
+		top: -65px;
+    left: 300px;
+	}
+
+	.service__description {
+		margin: 110px 0 90px 0;
+	}
+}
+
+@media (max-width: 1800px) {
+	.service__description {
+		display: block;
 	}
 }
 
