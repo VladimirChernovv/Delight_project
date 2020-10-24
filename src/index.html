@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delight</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
   
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -280,40 +280,44 @@
           </button>
         </div>
         
-        <ul class="services__list ">
-          <li class="services__list-item ">
-            <img class="services__list-picture" src="./img/services/image-1.png" alt="Гостиницы">
-            <div class="services__list-wrapper">
-              <p class="services__list-description">Гостиницы</p>
-              <p class="services__list-offers">14 230 027 <br> предложения</p>
-            </div>
-          </li>
+        <div class="container swiper-container">
 
-          <li class="services__list-item ">
-            <img class="services__list-picture" src="./img/services/image-2.png" alt="Мероприятия">
-            <div class="services__list-wrapper">
-              <p class="services__list-description">Мероприятия</p>
-              <p class="services__list-offers">17 002 <br> предложения</p>
-            </div>
-          </li>
+          <ul class="services__list swiper-wrapper">
+            <li class="services__list-item swiper-slide">
+              <img class="services__list-picture" src="./img/services/image-1.png" alt="Гостиницы">
+              <div class="services__list-wrapper">
+                <p class="services__list-description">Гостиницы</p>
+                <p class="services__list-offers">14 230 027 <br> предложения</p>
+              </div>
+            </li>
+  
+            <li class="services__list-item swiper-slide">
+              <img class="services__list-picture" src="./img/services/image-2.png" alt="Мероприятия">
+              <div class="services__list-wrapper">
+                <p class="services__list-description">Мероприятия</p>
+                <p class="services__list-offers">17 002 <br> предложения</p>
+              </div>
+            </li>
+  
+            <li class="services__list-item swiper-slide">
+              <img class="services__list-picture" src="./img/services/image-3.png" alt="Прокат транспорта">
+              <div class="services__list-wrapper">
+                <p class="services__list-description">Прокат транспорта</p>
+                <p class="services__list-offers">2 340 <br> предложения</p>
+              </div>
+            </li>
+  
+            <li class="services__list-item swiper-slide">
+              <img class="services__list-picture" src="./img/services/image-4.png" alt="Туризм">
+              <div class="services__list-wrapper">
+                <p class="services__list-description">Туризм</p>
+                <p class="services__list-offers">3 027 <br> предложения</p>
+              </div>
+            </li>
+  
+          </ul>
 
-          <!-- <li class="services__list-item ">
-            <img class="services__list-picture" src="./img/services/image-3.png" alt="Прокат транспорта">
-            <div class="services__list-wrapper">
-              <p class="services__list-description">Прокат транспорта</p>
-              <p class="services__list-offers">2 340 <br> предложения</p>
-            </div>
-          </li>
-
-          <li class="services__list-item ">
-            <img class="services__list-picture" src="./img/services/image-4.png" alt="Туризм">
-            <div class="services__list-wrapper">
-              <p class="services__list-description">Туризм</p>
-              <p class="services__list-offers">3 027 <br> предложения</p>
-            </div>
-          </li> -->
-
-        </ul>
+        </div>
         
       </section>
 
@@ -1078,7 +1082,7 @@
     </ul>
   </footer>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./js/slider.js"></script>
+  
+  
 </body>
 </html>
