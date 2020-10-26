@@ -1,32 +1,27 @@
+
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
-function getSlider(obj){
-  this.init(obj);
-}
-
-getSlider.prototype = {
-  swiper: undefined,
-  documentElement: document.documentElement,
-
-  init: function(obj){
-    if(this.documentElement.clientWidth < 768){
-      this.swiper = new Swiper(obj.container, obj.options);
-    }
-  }
-
+let mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
   
-};
+	loop: true,
+	slidesPerView: 3,
+	spaceBetween: 15,
 
-const mySlider = new getSlider({
-  container: '.swiper-container',
-  options: {
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    pagination: {
-      el: '.slider-pagination',
-      clickable: true
-    },
-    slideClass: '.swiper-slide',
-  }
-});
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
